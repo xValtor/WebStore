@@ -12,7 +12,7 @@ import java.util.List;
 @Table(name = "orderItems")
 public class OrderItem {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")

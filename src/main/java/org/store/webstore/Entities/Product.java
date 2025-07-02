@@ -11,11 +11,12 @@ import java.util.List;
 @Table(name = "products")
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotBlank(message = "Имя товара не может быть короче 3 символов")
     @Size(min = 3,max = 50)
     private String name;
+    @Column(nullable=true)
     private String description;
     private double price;
     private int summaryQuantity;
