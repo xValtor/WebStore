@@ -1,0 +1,32 @@
+<div th:fragment="filter">
+    <div class="filters">
+        <div class="filter">
+            <label for="category">Категория:</label>
+            <select id="category">
+                <option value="all">Все</option>
+                <option value="camera">Камеры</option>
+                <option value="lens">Объективы</option>
+                <option value="accessory">Аксессуары</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="price">Цена:</label>
+            <select id="price">
+                <option value="all">Все</option>
+                <option value="low">До 20 000 ₽</option>
+                <option value="medium">20 000 - 50 000 ₽</option>
+                <option value="high">От 50 000 ₽</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="brand">Бренд:</label>
+            <select id="brand">
+                <option value="all">Все</option>
+                <option value="canon">Canon</option>
+                <option value="nikon">Nikon</option>
+                <option value="sony">Sony</option>
+                <option value="fujifilm">Fujifilm</option>
+            </select>
+        </div>
+    </div>
+</div>

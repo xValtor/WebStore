@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фототехника - Корзина</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">Фототехника</div>
+        <div class="search">
+            <input type="text" placeholder="Поиск камер, объективов...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li class="active"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Корзина <span class="cart-count">2</span></a></li>
+                <li><a href="wishlist.html"><i class="fas fa-heart"></i> Избранное <span class="wishlist-count">1</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Корзина</h1>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <!-- Товар в корзине 1 -->
+            <div class="cart-item" data-id="1">
+                <div class="cart-item-image">
+                    <img src="https://via.placeholder.com/150x100?text=Canon+EOS+R5" alt="Canon EOS R5">
+                </div>
+                <div class="cart-item-details">
+                    <h3>Canon EOS R5</h3>
+                    <p class="price">249 990 ₽</p>
+                    <div class="quantity-controls">
+                        <button class="decrease">-</button>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-actions">
+                    <button class="remove-from-cart"><i class="fas fa-trash"></i></button>
+                    <button class="move-to-wishlist"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Товар в корзине 2 -->
+            <div class="cart-item" data-id="2">
+                <div class="cart-item-image">
+                    <img src="https://via.placeholder.com/150x100?text=Sony+FE+24-70mm" alt="Sony FE 24-70mm f/2.8 GM">
+                </div>
+                <div class="cart-item-details">
+                    <h3>Sony FE 24-70mm f/2.8 GM</h3>
+                    <p class="price">89 990 ₽</p>
+                    <div class="quantity-controls">
+                        <button class="decrease">-</button>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+                <div class="cart-item-actions">
+                    <button class="remove-from-cart"><i class="fas fa-trash"></i></button>
+                    <button class="move-to-wishlist"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Итого</h2>
+            <div class="summary-details">
+                <div class="summary-row">
+                    <span>Товары (2)</span>
+                    <span>339 980 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка</span>
+                    <span>Бесплатно</span>
+                </div>
+                <div class="summary-row total">
+                    <span>К оплате</span>
+                    <span>339 980 ₽</span>
+                </div>
+            </div>
+            <button class="checkout-button">Оформить заказ</button>
+            <p class="continue-shopping"><a href="index.html">← Продолжить покупки</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-section">
+            <h4>О магазине</h4>
+            <p>Лучшая фототехника по доступным ценам. Гарантия качества и официальная поставка.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>Email: info@fototehnika.ru</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </div>
+        <div class="footer-section">
+            <h4>Соцсети</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

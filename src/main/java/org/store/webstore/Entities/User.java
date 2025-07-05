@@ -44,6 +44,9 @@ public class User {
 
     private boolean enabled = false;
 
+    @OneToMany(mappedBy = "user")
+    private List<Review> reviews;
+
     public int getId() {
         return id;
     }

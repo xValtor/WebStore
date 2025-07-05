@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фототехника - Избранное</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">Фототехника</div>
+        <div class="search">
+            <input type="text" placeholder="Поиск камер, объективов...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Корзина <span class="cart-count">0</span></a></li>
+                <li class="active"><a href="wishlist.html"><i class="fas fa-heart"></i> Избранное <span class="wishlist-count">1</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Избранное</h1>
+
+    <div class="wishlist-container">
+        <div class="wishlist-items">
+            <!-- Товар в избранном -->
+            <div class="wishlist-item" data-id="3">
+                <div class="wishlist-item-image">
+                    <img src="https://via.placeholder.com/150x100?text=Fujifilm+X-T4" alt="Fujifilm X-T4">
+                </div>
+                <div class="wishlist-item-details">
+                    <h3>Fujifilm X-T4</h3>
+                    <p class="price">99 990 ₽</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(32)</span>
+                    </div>
+                </div>
+                <div class="wishlist-item-actions">
+                    <button class="add-to-cart">В корзину</button>
+                    <button class="remove-from-wishlist"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wishlist-empty" style="display: none;">
+            <div class="empty-message">
+                <i class="far fa-heart"></i>
+                <h2>Ваш список избранного пуст</h2>
+                <p>Добавляйте понравившиеся товары, нажимая на значок ♡</p>
+                <a href="index.html" class="browse-button">Перейти в каталог</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-section">
+            <h4>О магазине</h4>
+            <p>Лучшая фототехника по доступным ценам. Гарантия качества и официальная поставка.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>Email: valtorhal@yandex.com</p>
+            <p>Телефон: +7 (985) 583-07-66</p>
+        </div>
+        <div class="footer-section">
+            <h4>Соцсети</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фототехника - Избранное</title>
+    <link rel="stylesheet" th:href="@{css/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <p th:each="product : ${products}">
-        product: <span th:text="${product.name}">name</span>
-        product: <span th:text="${product.price}">price</span>
-        product: <span th:text="${product.summaryQuantity}">quantity</span>
-        product: <span th:text="${product.description}">description</span>
-        product: <span th:text="${product.category}">quantity</span>
-    </p>
+    <div th:insert="~{blocks/header::header}"></div>
+    <div th:insert="~{blocks/main::main}"></div>
+    <div th:insert="~{blocks/footer::footer}"></div>
 </body>
 </html>

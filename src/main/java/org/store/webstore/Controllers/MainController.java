@@ -17,13 +17,13 @@ public class MainController {
         this.webStoreService = webStoreService;
     }
 
-    @GetMapping("/")
-    public String BestStore() {
+    @GetMapping
+    public String BestStore(Model model) {
+        model.addAttribute("products",webStoreService.getProducts() );
         return "index";
     }
     @GetMapping("/addProduct")
     public String addProduct(Model model) {
-        model.addAttribute("products",webStoreService.getProducts() );
         model.addAttribute("product", new Product());
         return "index";
     }

@@ -1,0 +1,31 @@
+<div th:fragment="main">
+    <main class="container">
+        <h1>Каталог фототехники</h1>
+        <div th:insert="~{blocks/sub-blocks/filter::filter}"></div>
+        <div class="products">
+            <!-- Товар 1 -->
+            <div class="product" data-id="1" data-category="camera" data-price="high" data-brand="canon">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x200?text=Canon+EOS+R5" alt="Canon EOS R5">
+                    <div class="product-actions">
+                        <button class="add-to-cart">В корзину</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Canon EOS R5</h3>
+                    <p class="price">249 990 ₽</p>
+                    <p class="description">Полнокадровая беззеркальная камера с 45 Мп</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
